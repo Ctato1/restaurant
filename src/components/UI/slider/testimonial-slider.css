@@ -102,6 +102,25 @@
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 991px){
+
+  .person__review p{
+    line-height: 22px;
+  }
+  .person__review {
+    font-size: 1rem ;
+    line-height: 10px ;
+  }
+
+  .person__info img {
+    width: 150px !important;
+    height: 100px !important;
+
+    margin-bottom: 10px;
+  }
+
+}
+
 
 @media only screen and (max-width: 576px){
   
