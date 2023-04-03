@@ -1,0 +1,221 @@
+.header a {
+  text-decoration: none;
+  color: unset;
+}
+
+.header a:hover {
+  color: unset;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  line-height: 80px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 45%;
+  object-fit: contain;
+}
+
+.logo h5 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+.menu a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #df2020;
+}
+
+.active__menu {
+  color: #df2020 !important;
+}
+
+.cart__icon i,
+.user i,
+.mobile__menu i {
+  font-size: 1.3rem;
+  color: #212245;
+  cursor: pointer;
+}
+
+.cart__icon {
+  position: relative;
+}
+
+.cart__badge {
+  position: absolute;
+  top: 15px;
+  right: -13px;
+  background: #df2020;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__menu {
+  font-weight: 600;
+  display: none;
+}
+
+.header__shrink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #ffffffaa;
+  box-shadow: 5px 5px 15px -5px #f2f0f0da;
+  z-index: 9999;
+}
+
+.profile {
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.profile__actions {
+  background: #777777d0;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: -25px;
+  width: 100px;
+  display: none;
+}
+.show__profileActions {
+  display: block;
+}
+
+.profile__actions span {
+  margin: 10px 10px;
+  padding: 3px;
+  border-radius: 10px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.profile div {
+  margin: 5px 2px 5px 2px;
+  padding: 3px;
+  border-radius: 10px;
+  line-height: 30px;
+}
+
+/* .profile div{
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+
+@media only screen and (max-width: 992px) {
+  .logo img {
+    width: 35%;
+  }
+
+  .logo h5 {
+    font-size: 0.9rem;
+    margin-top: -15px;
+  }
+
+  .cart__icon i,
+  .user i,
+  .mobile__menu i {
+    font-size: 1.2rem;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2122457c;
+    z-index: 99;
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    z-index: 100;
+    overflow: hidden;
+    animation: menumove 0.4s;
+  }
+
+  @keyframes menumove {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  .menu a {
+    font-size: 0.9rem;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .show__menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 70px;
+    line-height: 50px;
+  }
+
+  /* .nav__wrapper .logo{
+    padding-top: 100px;
+  } */
+
+  .logo img {
+    width: 25%;
+  }
+
+  .logo h5 {
+    margin-top: -10px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .logo h5 {
+    font-size: 0.7rem;
+  }
+}

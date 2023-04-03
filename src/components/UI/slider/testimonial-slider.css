@@ -1,0 +1,153 @@
+.all__review {
+  border: 1px solid #77777721;
+  border-radius: 10px;
+  padding: 10px;
+
+  font-family: "Cinzel", serif;
+  font-size: 1.12rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+}
+
+
+.all__review::before,
+.all__review::after {
+  position: absolute;
+  background: #fff;
+  border-radius: 10px;
+  z-index: -1;
+  transition: 1s;
+  content: "";
+}
+
+.all__review::before {
+  height: 90%;
+  width: 97%;
+  background: #c3c2c234;
+}
+
+.all__review::after {
+  height: 0%;
+  width: 90%;
+  background: #7771;
+}
+
+.person__review {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.all__review:hover::before {
+  width: 0px;
+  background: #c3c2c2a9;
+}
+
+/* .all__review:hover::after {
+  height: 0px;
+  background: #dcdcdca9;
+} */
+
+.all__review:hover {
+  background: #cccccc;
+}
+
+.all__review:hover .person__review {
+  background: #e6e5e5a9;
+  border-right: transparent;
+}
+
+.person__review {
+  border-left: 1px solid #cccccc;
+  border-radius: 10px;
+  position: relative;
+  height: 250px;
+  transition: .3s;
+}
+
+.person__review:focus{
+  outline: transparent;
+}
+
+.review__text {
+  color: #777;
+  margin: 3px 10px;
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.person__info {
+  margin: 3px 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.person__info img {
+  border-radius: 10px;
+  width: 200px !important;
+  height: 120px !important;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+
+@media only screen and (max-width: 576px){
+  
+  .person__review {
+    height: 190px;
+  }
+  .review__text {
+    margin: 1px 10px;
+    font-size: .9rem;
+    line-height: 25px;
+  }
+
+  
+
+  .person__info img {
+    width: 100px !important;
+    height: 60px !important;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+
+  .person__info h6{
+    font-size: .8rem;
+  }
+
+}
+
+@media only screen and (max-width: 400px){
+  
+
+  .review__text {
+    font-size: .8rem;
+    line-height: 20px;
+  }
+
+  
+
+  .person__info img {
+    width: 100px !important;
+    height: 60px !important;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+
+  .person__info h6{
+    font-size: .8rem;
+  }
+
+}

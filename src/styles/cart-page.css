@@ -1,0 +1,26 @@
+button a,
+button a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+th{
+    text-align: center !important;
+}
+
+tr i {
+    cursor: pointer;
+}
+
+.image-box{
+    width: 50px;
+    object-fit: cover;
+}
+
+.cart__subtotal {
+    color: #df2020;
+}
+
+.subtotal{
+    margin-top: 60px;
+}

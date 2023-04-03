@@ -1,0 +1,234 @@
+.feature__subtitle {
+  color: #df2020;
+}
+
+.feature__title span {
+  color: #df2020;
+}
+
+.feature__item p {
+  color: #777;
+}
+
+.food__category {
+  background: #df2020;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px 10px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.food__category button {
+  border: none;
+  outline: none;
+  padding: 4px 10px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.food__category button img {
+  width: 25px;
+  height: 25px;
+}
+
+.foodBtnActive {
+  background: #fff !important;
+  color: #df2020 !important;
+  font-weight: 600 !important;
+}
+
+/* Location */
+
+.bonanza__title span {
+  color: #df2020;
+}
+
+.bonanza__desc {
+  color: #777;
+  line-height: 30px;
+}
+
+.why__bonanza {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.why__bonanza-center p {
+  margin: 2px 0px;
+}
+
+.choose__us-title {
+  font-weight: 600;
+}
+
+.choose__us-title i {
+  font-weight: 500 !important;
+  color: #df2020;
+}
+
+.choose__us-desc {
+  color: #777;
+}
+
+/* Testimonial */
+
+.testimonial__subtitle {
+  color: #df2020;
+}
+
+.testimonial__title span {
+  color: #df2020;
+}
+
+.testimonial__desc {
+  color: #777;
+  line-height: 30px;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  .feature__subtitle {
+    font-size: 1rem !important;
+  }
+
+  .feature__text {
+    font-size: 0.9rem;
+    line-height: 25px;
+  }
+
+  .feature__title {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  .hero__btns {
+    justify-content: center;
+  }
+
+  .hero__btns button {
+    font-size: 0.8rem;
+    padding: 5px 15px;
+  }
+
+  .hero__service {
+    justify-content: center;
+  }
+
+  .feature__col {
+    display: flex;
+    margin: auto;
+  }
+
+  .feature__item h5 {
+    font-size: 1rem;
+  }
+
+  .feature__item p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .feature__item img {
+    width: 60px !important;
+  }
+
+  /* food category */
+
+  .food__title {
+    font-size: 1.4rem;
+  }
+
+  .food__category {
+    margin-top: 10px;
+    padding: 15px 6px;
+    gap: 1.4rem;
+  }
+
+  .food__category button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+
+  .food__category button img {
+    margin-right: 5px;
+  }
+
+  .food__category button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* product card */
+  .product__card {
+    padding: 30px 0;
+  }
+
+  /* Why Bonanza */
+
+  .bonanza__title{
+    font-size: 1.5rem;
+  }
+
+
+  .bonanza__desc {
+    font-size: .9rem;
+    line-height: 25px;
+  }
+
+  .choose__us-title{
+    font-size: .9rem;
+  }
+
+  .choose__us-desc{
+    font-size: .9rem;
+  }
+
+  /* Testimonial */
+
+  .testimonial__subtitle{
+    font-size: 1rem;
+  }
+
+  .testimonial__title{
+    font-size: 1.5rem;
+  }
+
+  .testimonial__desc{
+    font-size: .9rem;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 397px) {
+  .food__title {
+    font-size: 1.2rem;
+  }
+
+  .food__category {
+    gap: .7rem;
+  }
+
+  .food__category button {
+    padding: 5px 6px;
+    font-size: 0.7rem;
+  }
+
+  .food__category button img {
+    margin-right: 2px;
+  }
+
+  .food__category button img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+

@@ -1,0 +1,31 @@
+.payment__numbers {
+  padding: 30px;
+  background: #fde4e4;
+  border-radius: 5px;
+}
+
+.payment__numbers span {
+  color: #df2020;
+}
+
+@media only screen and (max-width: 300px){
+    .checkout__form p {
+        font-size: .9rem;
+      }
+      
+}
+
+@media only screen and (max-width: 260px) {
+  .payment__numbers h5 {
+    font-size: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 190px){
+    .payment__numbers h5 {
+        font-size: .8rem;
+      }
+      
+}
+

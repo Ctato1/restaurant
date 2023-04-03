@@ -1,0 +1,243 @@
+.hero__content a {
+  text-decoration: none;
+  color: unset;
+}
+
+.hero__content a:hover {
+  color: unset;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  line-height: 55px;
+}
+
+.hero__title span {
+  color: #df2020;
+}
+
+.hero__content {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.hero__content p {
+  font-size: 1rem;
+  line-height: 30px;
+  color: #777;
+}
+
+.hero__btns button {
+  border: none;
+  outline: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.order__btn {
+  background: #df2020;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.order__btn:hover {
+  background: #212245;
+}
+
+.all__foods-btn {
+  background: transparent;
+  border: 1px solid #df2020 !important;
+}
+.all__foods-btn a {
+  transition: 0.2s;
+}
+.all__foods-btn:hover a {
+  color: #df2020;
+}
+
+.hero__service p {
+  color: #212245;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.shipping__icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background: #df2020;
+  color: #fff;
+  border-radius: 50%;
+}
+
+/* --- */
+
+.hero__content-center {
+  max-width: 100%;
+  transform: scale(0.8);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+/*  */
+
+.hero__img {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__img img {
+  max-width: 100%;
+  animation: image 3s;
+}
+
+@keyframes image {
+  from {
+    transform: translateX(110%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+/*  */
+
+.hero__content-center .hero__title span,
+.hero__content-center span i,
+.hero__content-center p,
+.hero__content-center h1,
+.hero__content-center h5,
+.hero__content-center a,
+.hero__content-center button {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(3px);
+}
+
+.hero__content-center h5 {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.hero__content-center h1 {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.hero__content-center h1 span {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.hero__content-center p:nth-child(3) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.hero__content-center button,
+.hero__content-center a {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.hero__content-center a {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.hero__content-center span i {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.hero__content-center p {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* media */
+
+@media only screen and (max-width: 992px) {
+  .hero__content h5 {
+    font-size: 1.4rem;
+  }
+
+  .hero__content-center p {
+    font-size: 1.1rem;
+    line-height: 22px;
+  }
+
+  .hero__title {
+    font-size: 1.7rem;
+    line-height: 40px;
+  }
+
+  .hero__btns button {
+    font-size: 1rem;
+    padding: 5px 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__content h5 {
+    font-size: 1.2rem;
+  }
+
+  .hero__content-center p {
+    font-size: 1rem;
+    line-height: 22px;
+  }
+
+  .hero__title {
+    font-size: 1.4rem;
+    line-height: 40px;
+  }
+
+  .hero__btns button {
+    font-size: 0.9rem;
+    padding: 5px 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero__content {
+    text-align: center;
+  }
+
+  .hero__content h5 {
+    font-size: 1rem;
+  }
+
+  .hero__content-center p {
+    font-size: 0.9rem;
+    line-height: 25px;
+  }
+
+  .hero__title {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+
+  .hero__btns {
+    justify-content: center;
+  }
+
+  .hero__btns button {
+    font-size: 0.8rem;
+    padding: 5px 15px;
+  }
+
+  .hero__service {
+    justify-content: center;
+  }
+
+}

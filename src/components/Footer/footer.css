@@ -1,0 +1,113 @@
+.footer {
+  padding: 50px 0px;
+  background: #fde4e4;
+}
+
+.footer__logo img {
+  width: 20%;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.footer__logo h5 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.footer__logo p {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 28px;
+}
+
+.delivery__time-list {
+  background: transparent;
+}
+.delivery__time-item {
+  background: transparent !important;
+}
+.delivery__time-item span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+}
+
+.delivery__time-item p {
+  color: #212245;
+}
+
+.footer__title {
+  font-size: 1.1rem;
+  color: #212245;
+  font-weight: 600;
+}
+
+.newsletter {
+  padding: 5px;
+  border: 1px solid #212245;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.newsletter input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 70%;
+}
+
+.newsletter input:focus {
+  outline: none;
+}
+.newsletter input::placeholder {
+  color: #212245;
+}
+
+/* .newsletter span{
+    background: #212245;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.newsletter span i {
+  color: #fff;
+}
+
+.newsletter span {
+  position: absolute;
+  top: 0.01px;
+  bottom: 0.01px;
+  right: 0px;
+  cursor: pointer;
+  background: #212245;
+  padding: 2px 10px;
+  border-radius: 0px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+@media only screen and (max-width: 286px) {
+  .footer__logo h5,
+  .footer__title,
+  .footer__title {
+    font-size: 0.9rem;
+  }
+  .footer__logo p,
+  .delivery__time-list p,
+  .delivery__time-list span {
+    font-size: 0.8rem;
+    line-height: 17px;
+  }
+}

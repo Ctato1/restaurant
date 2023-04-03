@@ -1,0 +1,34 @@
+
+.search__widget {
+    
+    position: relative;
+}
+
+.search__widget input{
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.search__widget span{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 1.5rem;
+}
+
+.paginationBttns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+@media only screen and (max-width: 167px){
+    .paginationBttns li{
+        font-size: .6rem;
+    }
+}
